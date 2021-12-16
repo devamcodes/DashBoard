@@ -1,12 +1,10 @@
 import * as React from "react";
-import Link from "@mui/material/Link";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Title from "./Title";
-import { Button, IconButton, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 // Generate Order Data
 function createData(id, name) {
@@ -20,10 +18,6 @@ const rows = [
   createData(3, "Michael Jackson"),
   createData(4, "Bruce Springsteen"),
 ];
-
-function preventDefault(event) {
-  event.preventDefault();
-}
 
 export default function Orders() {
   return (
