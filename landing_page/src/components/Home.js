@@ -121,7 +121,11 @@ function DashboardContent() {
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+        <AppBar
+          position="absolute"
+          open={open}
+          style={{ backgroundColor: "#fff", color: "#0073cf" }}
+        >
           <Toolbar
             sx={{
               pr: "24px", // keep right padding when drawer closed
