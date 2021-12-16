@@ -25,6 +25,8 @@ import ToggleSwitch from "./ToggleSwitch";
 import Graphics from "./Bars";
 import { dataBase } from "./DataBase";
 import Stats from "./Stats";
+import Button from "@mui/material/Button";
+import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
 const columns = [
   {
     dataIndex: "Clientes",
@@ -47,7 +49,7 @@ function Copyright(props) {
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
         Your Website
-      </Link>{" "}
+      </Link>
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -215,11 +217,15 @@ function DashboardContent() {
                 sx={{
                   p: 2,
                   m: 2,
-                  width: "160vh",
+                  width: "170vh",
                   height: 70,
                 }}
               >
-                Hello, User
+                <Typography
+                  sx={{ ml: 1, fontFamily: "sans-serif", fontWeight: 600 }}
+                >
+                  Hello , User
+                </Typography>
               </Paper>
             </Grid>
             <Grid item>
@@ -227,11 +233,20 @@ function DashboardContent() {
                 sx={{
                   p: 2,
                   m: 2,
-                  width: "20vh",
+                  width: "80%",
                   height: 70,
                 }}
               >
-                DownLoad
+                <Grid item display={"flex"}>
+                  <Typography
+                    sx={{ ml: 1, fontFamily: "sans-serif", fontWeight: 600 }}
+                  >
+                    DownLoad
+                  </Typography>
+                  <Button>
+                    <DownloadForOfflineOutlinedIcon />
+                  </Button>
+                </Grid>
               </Paper>
             </Grid>
           </Grid>
