@@ -24,7 +24,7 @@ import Search from "./Search";
 import ToggleSwitch from "./ToggleSwitch";
 import Graphics from "./Bars";
 import { dataBase } from "./DataBase";
-
+import Stats from "./Stats";
 const columns = [
   {
     dataIndex: "Clientes",
@@ -287,6 +287,7 @@ function DashboardContent() {
                       <ToggleSwitch />
                     </Grid>
                   </Grid>
+                  <Stats />
                 </Paper>
               </Grid>
 
