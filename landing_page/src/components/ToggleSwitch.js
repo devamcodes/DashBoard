@@ -8,6 +8,7 @@ import { Box, Grid, Menu, MenuItem, Button, Typography } from "@mui/material";
 export default function ToggleSwitch() {
   //   const TimeSlots = ["Year", "Month", "Day"];
   const [anchorElUser, setAnchorElUser] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [timeSlots, useTimeSlots] = useState(["Year", "Month", "Day"]);
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);

@@ -115,6 +115,7 @@ function DashboardContent() {
       Clientes: value.clients,
       Funcionários: value.employees,
     }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dataBase]);
   return (
     <ThemeProvider theme={mdTheme}>
