@@ -35,7 +35,7 @@ function Graphics({ dataBar, columnsBar }) {
         Data={dataBar}
         Columns={columnsBar}
         grid={true}
-        width={700}
+        width={600}
         height={300}
       />
     </>
